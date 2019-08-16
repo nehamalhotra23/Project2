@@ -7,8 +7,8 @@
 }
 
 h1 {
-  color: red;
-  margin-left: 400px;
+  color: white;
+  text-shadow: -5px -5px 0 #000, 5px -5px 0 #000, -5px 5px 0 #000, 5px 5px 0 #000 font-size: 30px;
 }
 
 body {
@@ -22,7 +22,19 @@ p {
 .python {
   margin-top: -20px;
 }
-#text{
-  display: none;
 
+#text {
+  display: none;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+#submit {
+  margin-top: 20px;
+}
+
+h4 {
+  margin-top: 20px;
 }

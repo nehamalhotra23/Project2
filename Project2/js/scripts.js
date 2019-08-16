@@ -4,24 +4,26 @@ $(document).ready(function() {
     event.preventDefault();
     $(".card").hide();
     if (first === "ye") {
+      $("#L5").show();
       $("#L1").show();
     } else if (first === "no") {
       $("#L3").show();
     } else {
-      alert('Please select One of the available options');
+      alert('Please select if you like coffe?');
     }
   });
   $("#submit").click(function() {
     var second = $("#que2").val();
     event.preventDefault();
     if (second === "hi") {
-      $("#L1").show();
+      $("#L5").show();
+      $("#L3").show();
     } else if (second === "lo") {
       $("L6").show();
     } else if (second === "mo") {
       $("#L4").show();
     } else {
-      alert('Please select One of the available options');
+      alert('Please select your stress level?');
     }
   });
 
@@ -30,10 +32,12 @@ $(document).ready(function() {
     event.preventDefault();
     if (third === "es") {
       $("#L5").show();
+      $("L6").show();
     } else if (third === "on") {
       $("L2").show();
+      $("#L3").show();
     } else {
-      alert('Please select One of the available options');
+      alert('Please select if you like computers?');
     }
   });
   $("#submit").click(function() {
@@ -41,10 +45,11 @@ $(document).ready(function() {
     event.preventDefault();
     if (four === "Fd") {
       $("#L3").show();
+      $("#L1").show();
     } else if (four === "hd") {
       $("L6").show();
     } else {
-      alert('Please select One of the available options');
+      alert('Please select your time prefrences?');
     }
   });
   $("#submit").click(function() {
@@ -52,12 +57,20 @@ $(document).ready(function() {
     event.preventDefault();
     if (five === "NW") {
       $("#L1").show();
+      $("#L2").show();
     } else if (five === "OD") {
       $("L5").show();
     } else {
-      alert('Please select One of the available options');
+      alert('Please select if you like to meet new people or not?');
     }
   });
 
+  $("#submit").click(function() {
+    $("#text").show();
+  });
 
+  $("#submit2").click(function() {
+    var textNew = $("#exampleFormControlTextarea4").val();
+    alert('Thank for providing feedback!!');
+  });
 });
