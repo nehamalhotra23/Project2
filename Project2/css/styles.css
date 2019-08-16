@@ -21,7 +21,8 @@ p {
 
 .python {
   margin-top: -20px;
+}
+#text{
+  display: none;
 
-  h2 {
-    font-size: 50px;
-  }
+}
