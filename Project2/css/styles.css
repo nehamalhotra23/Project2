@@ -16,7 +16,7 @@ body {
 }
 
 p {
-  display: block;
+  text-align: justify;
 }
 
 .python {
@@ -31,7 +31,7 @@ h2 {
   font-size: 20px;
 }
 
-#submit {
+#submit, #submit2 {
   margin-top: 20px;
 }
 
