@@ -1,31 +1,63 @@
 $(document).ready(function() {
   $("#submit").click(function() {
     var first = $("#que1").val();
-    var second = $("#que2").val();
-    var third = $("#que3").val();
-    var four = $("#que4").val();
-    var five = $("#que5").val();
+    event.preventDefault();
     $(".card").hide();
-    if (first==="ye" &&  second==="hi" && third==="es" && four==="Fd" && five==="NW") {
-      $("#L2").show();
-      $("#L4").show();
-    } else if (first==="no" && second==="lo" && third==="on" && four==="hd" && five==="OD" {
-      $("#L6").show();
-      $("#L4").show();
-    } else if (first === "no" {
+    if (first === "ye") {
       $("#L1").show();
+    } else if (first === "no") {
       $("#L3").show();
-    } else if (first === "no"  {
-      $("#L5").show();
-      $("#L3").show();
-    } else  {
-      alert ('choose Somthing')
+    } else {
+      alert('Please select One of the available options');
+    }
+  });
+  $("#submit").click(function() {
+    var second = $("#que2").val();
+    event.preventDefault();
+    if (second === "hi") {
+      $("#L1").show();
+    } else if (second === "lo") {
+      $("L6").show();
+    } else if (second === "mo") {
+      $("#L4").show();
+    } else {
+      alert('Please select One of the available options');
     }
   });
 
-
   $("#submit").click(function() {
-    $("#text").show();
+    var third = $("#que3").val();
+    event.preventDefault();
+    if (third === "es") {
+      $("#L5").show();
+    } else if (third === "on") {
+      $("L2").show();
+    } else {
+      alert('Please select One of the available options');
+    }
   });
+  $("#submit").click(function() {
+    var four = $("#que4").val();
+    event.preventDefault();
+    if (four === "Fd") {
+      $("#L3").show();
+    } else if (four === "hd") {
+      $("L6").show();
+    } else {
+      alert('Please select One of the available options');
+    }
+  });
+  $("#submit").click(function() {
+    var five = $("#que5").val();
+    event.preventDefault();
+    if (five === "NW") {
+      $("#L1").show();
+    } else if (five === "OD") {
+      $("L5").show();
+    } else {
+      alert('Please select One of the available options');
+    }
+  });
+
 
 });
