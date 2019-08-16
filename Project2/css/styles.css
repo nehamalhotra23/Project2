@@ -1,23 +1,27 @@
 .card-img-top {
   size: 200px;
 }
+
 #L1, #L2, #L3, #L4, #L5, #L6 {
   display: none;
 }
 
- h1 {
-   color: red;
-   margin-left: 400px;
- }
- body {
-   background-color: #BC8F8F;
- }
- p {
-   display: block;
- }
+h1 {
+  color: red;
+  margin-left: 400px;
+}
+
+body {
+  background-color: #BC8F8F;
+}
+
+p {
+  display: block;
+}
+
 .python {
   margin-top: -20px;
 
-h2 {
-  font-size: 50px;
-}
+  h2 {
+    font-size: 50px;
+  }
