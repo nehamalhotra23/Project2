@@ -10,7 +10,6 @@ User Have to Answer few Questions which will be asked according to their interes
 
 ## Setup/Installation Requirements
 
--   View my Project on https://github.com/nehamalhotra23/Project2/tree/master/Project2
 -   Git Clone https://github.com/nehamalhotra23/Project2.git
 -   Open in any Code editor
 
